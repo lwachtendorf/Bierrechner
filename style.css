@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#total {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.grid, .grid-utilities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+}
+
+.tile {
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.1s;
+}
+
+.tile:active {
+  transform: scale(0.96);
+}
+
+.tile.wide {
+  grid-column: span 2;
+}
+
+.softdrinks { background-color: #3498db; }
+.radler     { background-color: #f39c12; }
+.bier       { background-color: #27ae60; }
+.wasser     { background-color: #1abc9c; }
+.charlie    { background-color: #9b59b6; }
+.pfand      { background-color: #e74c3c; }
+.reset      { background-color: #7f8c8d; }

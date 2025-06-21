@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Getränkekasse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Getränkekasse</h1>
+  <div id="total">0,00 €</div>
+
+  <div class="grid-utilities">
+    <div class="tile reset wide" onclick="reset()">Zurücksetzen</div>
+    <div class="tile pfand" onclick="add(-1.0)">Pfand<br>–1,00 €</div>
+  </div>
+
+  <div class="grid">
+    <div class="tile softdrinks" onclick="add(2.5)">Softdrinks<br>2,50 €</div>
+    <div class="tile radler"     onclick="add(3.0)">Radler<br>3,00 €</div>
+    <div class="tile bier"       onclick="add(3.0)">Bier<br>3,00 €</div>
+    <div class="tile wasser"     onclick="add(2.0)">Wasser<br>2,00 €</div>
+    <div class="tile charlie"    onclick="add(1.5)">Charlie<br>1,50 €</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
